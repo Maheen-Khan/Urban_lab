@@ -1,0 +1,92 @@
+/* General Page Layout */
+.checkout-page {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.checkout-page h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #4caf50;
+}
+
+/* Form Styles */
+.checkout-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.checkout-form label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.checkout-form input,
+.checkout-form textarea {
+    font-size: 1rem;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.checkout-form textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+.checkout-form input:focus,
+.checkout-form textarea:focus {
+    border-color: #4caf50;
+    outline: none;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+/* Button Styles */
+.confirm-button {
+    background-color: #4caf50;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.confirm-button:hover {
+    background-color: #388e3c;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .checkout-page {
+        padding: 15px;
+    }
+
+    .checkout-form label {
+        font-size: 0.9rem;
+    }
+
+    .checkout-form input,
+    .checkout-form textarea {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    .confirm-button {
+        font-size: 1rem;
+        padding: 10px;
+    }
+}

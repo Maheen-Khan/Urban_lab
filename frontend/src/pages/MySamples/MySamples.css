@@ -1,0 +1,129 @@
+.samples-page {
+    display: flex;
+    height: 100vh;
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+}
+
+.samples-sidebar {
+    width: 30%;
+    background: white;
+    border-right: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+}
+
+.samples-sidebar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sample-item {
+    background: #93b193;
+    color: white;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-size: 16px;
+}
+
+.sample-item:hover {
+    background: #a9c5a9;
+    transform: scale(1.02);
+}
+
+.sample-item.selected {
+    background: #709e70;
+    color: white;
+    font-weight: bold;
+}
+
+.samples-details {
+    flex: 1;
+    padding: 30px;
+}
+
+.sample-detail {
+    margin-bottom: 20px;
+    text-align: left;
+    line-height: 1.8; /* Increase line height for better readability */
+    word-wrap: break-word; /* Ensure long words wrap properly */
+    white-space: nowrap; /* Prevent breaking lines unnecessarily */
+}
+
+.sample-detail h3 {
+    font-size: 20px;
+    margin: 5px 0;
+    color: #333;
+    white-space: nowrap; /* Keep text on a single line */
+    overflow: hidden; /* Prevent overflowing of text */
+    text-overflow: ellipsis; /* Add ellipsis if text overflows */
+}
+
+
+.test-info {
+    width: 100%; /* Full width of the parent container */
+    height: 70vh; /* Large height to fill space */
+    padding: 40px;
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.test-info-header {
+    display: flex;
+    justify-content: space-between;
+    white-space: nowrap; /* Keep text on a single line */
+}
+
+.test-info-header h4 {
+    font-size: 26px;
+    color: #333;
+
+}
+
+.print-button {
+    background: white;
+    border: 2px solid #93b193;
+    color: #333;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.print-button:hover {
+    background-color: #93b193;
+    color: white;
+}
+
+.test-info ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 18px;
+    margin-top: 40px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.test-info li {
+    margin-bottom: 15px;
+}
+
+.date-received {
+    font-size: 18px;
+    color: #555;
+    text-align: left;
+    margin-top: 20px;
+}

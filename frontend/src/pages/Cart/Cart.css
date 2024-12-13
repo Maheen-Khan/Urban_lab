@@ -1,0 +1,100 @@
+/* Cart container */
+.cart-container {
+    flex: 0 0 50%; /* Adjust width to fit into the empty space */
+    max-width: 50%; /* Ensure it doesn’t expand too much */
+    position: sticky;
+    top: 20px;
+    background-color: #f8f8f8;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+/* Cart title */
+.cart h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #333;
+}
+
+/* Cart item list */
+.cart ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Cart items */
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.cart-item-name {
+    flex: 2; /* Allow the item name to take up more space */
+    text-align: left;
+}
+
+.cart-item-price {
+    flex: 1; /* Allocate some space for the price */
+    text-align: right;
+    font-weight: bold;
+    margin-right: 20px;
+
+}
+
+/* Remove button */
+.remove-button {
+    padding: 5px 12px; /* Smaller padding for a shorter button */
+    background-color: #d9534f;
+    border: none;
+    color: white;
+    font-size: 12px; /* Adjust font size if needed */
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 30px;
+}
+
+.remove-button:hover {
+    background-color: #c9302c; /* Darker red on hover */
+}
+
+.remove-button:hover {
+    background-color: #c9302c;
+}
+
+/* Cart footer */
+.cart-footer {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.total-price {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.checkout-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.checkout-button:hover {
+    background-color: #4cae4c;
+}
